@@ -12,42 +12,43 @@ const Store = () => {
                 <div>
                     <S.StoreItemBig>
                         <S.StoreImg>
-                            <StaticImage src="../../images/product1.png" quality={10} layout="fullWidth" />
+                            <StaticImage src="../../images/tpx.jpg" quality={10} layout="fullWidth" />
                         </S.StoreImg>
                         <S.FlexBox>
                             <div id="content">
                                 <T.Titulo2>TPX Presidente</T.Titulo2>
-                                <T.Texto>Your service your personal space for shopping and entertainment, featuring a swimming pool</T.Texto>
+                                <T.Texto>Moderno e amplo encosto em tela de linhas marcantes e angulares, braços ajustáveis, espuma de boa resiliência e um mecanismo exclusivo</T.Texto>
                                 <CTA />
                             </div>
                         </S.FlexBox>
                     </S.StoreItemBig>
                 </div>
                 <div className="gap">
-                    <S.StoreItemSmall>
+                <S.StoreItemSmall>
                         <S.StoreImg>
-                            <StaticImage src="../../images/product2.png" layout="fullWidth" />
+                            <StaticImage src="../../images/song.jpg" layout="fullWidth" />
                         </S.StoreImg>
                         <S.FlexBox>
                             <div id="content">
-                                <T.Titulo2>TPX Presidente</T.Titulo2>
-                                <T.Texto>Your service your personal space for shopping and entertainment, featuring a swimming pool</T.Texto>
+                                <T.Titulo2>Cadeira Song </T.Titulo2>
+                                <T.Texto>Os apoios de cabeça, de braços e lombar são ajustáveis e, somados ao mecanismo deslizante, oferecem múltiplas combinações para se adaptarem aos mais diversos biotipos.</T.Texto>
                                 <CTA />
                             </div>
                         </S.FlexBox>
                     </S.StoreItemSmall>
                     <S.StoreItemSmall>
                         <S.StoreImg>
-                            <StaticImage src="../../images/product2.png" layout="fullWidth" />
+                            <StaticImage src="../../images/start.png" layout="fullWidth" />
                         </S.StoreImg>
                         <S.FlexBox>
                             <div id="content">
-                                <T.Titulo2>TPX Presidente</T.Titulo2>
-                                <T.Texto>Your service your personal space for shopping and entertainment, featuring a swimming pool</T.Texto>
+                                <T.Titulo2>Móveis de escritório no geral</T.Titulo2>
+                                <T.Texto>Conheça outras opções incríveis</T.Texto>
                                 <CTA />
                             </div>
                         </S.FlexBox>
                     </S.StoreItemSmall>
+                    
                 </div>
             </S.StoreGrid>
         </S.StoreWrapper>

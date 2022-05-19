@@ -22,7 +22,7 @@ export const Titulo2 = styled.h2`
     font-weight: 600;
     font-size: 39px;
     line-height: 58px;
-    color: #1c1a1b;
+    color: ${(props) => `#${props.color}` || `#1c1a1b`};
 `;
 
 export const Titulo3 = styled.h3`

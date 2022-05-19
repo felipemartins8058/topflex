@@ -9,7 +9,7 @@ const About = () => {
             <S.AboutFlex>
                 <S.AboutContent>
                     <T.Titulo1>Sobre Nós</T.Titulo1>
-                    <T.Texto>Victory Gallery is at your service – your personal space for shopping and entertainment, featuring a swimming ool.Victory Gallery is at your service your personal space for shopping and entertainment, featuring a swimming pool.Victory Gallery is at your service – your personal space for shopping and tertainment, featuring a swimming pool.</T.Texto>
+                    <T.Texto>Atuamos no mercado desde 1990, como especialistas em Cadeiras Office, Cadeiras Design e Móveis para Escritório. Estamos entre as líderes de vendas em Fortaleza e nos destacamos pela qualidade técnica, junção do conforto, elegância e ergonomia em nossos produtos, além do atendimento de excelência, tanto online quanto presencial. Produtividade e bem estar, você adquire na Topflex.</T.Texto>
                 </S.AboutContent>
                 <S.AboutImage>
                     <StaticImage layout="fullWidth" src="../../images/about.png" />
@@ -18,20 +18,16 @@ const About = () => {
             <S.BigNumbers>
                 <S.BigNumbersGrid>
                     <div>
-                        <T.Titulo3 color="fff" alignText="center">500</T.Titulo3>
-                        <T.Texto color="fff" textAlign="center">Completed Projects</T.Texto>
+                        <T.Titulo3 color="fff" alignText="center">+ 500</T.Titulo3>
+                        <T.Texto color="fff" textAlign="center">Empresas atendidas</T.Texto>
                     </div>
                     <div>
-                        <T.Titulo3 color="fff" alignText="center">400</T.Titulo3>
-                        <T.Texto color="fff" textAlign="center">Professional Designers</T.Texto>
+                        <T.Titulo3 color="fff" alignText="center">+ 400</T.Titulo3>
+                        <T.Texto color="fff" textAlign="center">Clientes satisfeitos</T.Texto>
                     </div>
                     <div>
-                        <T.Titulo3 color="fff" alignText="center">500</T.Titulo3>
-                        <T.Texto color="fff" textAlign="center">Completed Projects</T.Texto>
-                    </div>
-                    <div>
-                        <T.Titulo3 color="fff" alignText="center">400</T.Titulo3>
-                        <T.Texto color="fff" textAlign="center">Professional Designers</T.Texto>
+                        <T.Titulo3 color="fff" alignText="center">+ 10.000</T.Titulo3>
+                        <T.Texto color="fff" textAlign="center">Cadeiras entregues</T.Texto>
                     </div>
                 </S.BigNumbersGrid>
             </S.BigNumbers>

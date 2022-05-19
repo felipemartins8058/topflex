@@ -9,7 +9,7 @@ export const FeedbackWrapper = styled.div`
 `
 export const Img = styled.div`
     position: absolute;
-    bottom: 70%;
+    top: -85px;
     left: 50%;
     transform: translateX(-50%);
     background: #fff;

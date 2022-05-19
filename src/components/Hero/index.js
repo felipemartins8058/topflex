@@ -13,7 +13,7 @@ const Hero = () => {
             <S.HeroGrid>
                 <S.HeroContent>
                     <T.Titulo1>Ergonomia e Conforto na hora de trabalhar</T.Titulo1>
-                    <T.Texto>Victory Gallery is at your service – your personal space for shopping and entertainment, featuring a swimming pool.</T.Texto>
+                    <T.Texto>Conheça as melhores opções de cadeiras office para quem trabalha o dia todo sentado</T.Texto>
                     <CTA marginTop={3} />
                 </S.HeroContent>
                 <div></div>

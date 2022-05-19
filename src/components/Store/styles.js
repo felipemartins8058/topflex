@@ -30,6 +30,7 @@ export const StoreItemBig = styled.div`
     border-radius: 1rem;
     overflow: hidden;
     height: 100%;
+    border: solid 1px #00000029;
 `
 
 export const FlexBox = styled.div`
@@ -65,4 +66,5 @@ export const StoreItemSmall = styled.div`
     position: relative;
     border-radius: 1rem;
     overflow: hidden;
+    border: solid 1px #00000029;
 `
