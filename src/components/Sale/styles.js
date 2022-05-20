@@ -1,9 +1,9 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const SaleWrapper = styled.section`
     position: relative;
     margin-top: 5rem;
-`
+`;
 
 export const SaleBackground = styled.div`
     position: absolute;
@@ -16,8 +16,17 @@ export const SaleBackground = styled.div`
     overflow: hidden;
     z-index: -1;
 
-    .gatsby-image-wrapper{
-        height: 100%;
+    .gatsby-image-wrapper img {
+        transform: translateY(-25%) scaleX(-1);
+    }
+
+    @media (max-width: 768px) {
+        .gatsby-image-wrapper {
+            height: 100%;
+        }
+        .gatsby-image-wrapper img {
+            transform: scaleX(-1);
+        }
     }
 `;
 
@@ -31,7 +40,7 @@ export const Wrapper = styled.div`
     @media (max-width: 768px) {
         grid-template-columns: 1fr;
     }
-`
+`;
 
 export const Box = styled.div`
     background: #ffffffdb;
@@ -43,6 +52,6 @@ export const Box = styled.div`
     align-items: flex-end;
 
     @media (max-width: 768px) {
-        padding: .5rem;
+        padding: 0.5rem;
     }
-`
+`;

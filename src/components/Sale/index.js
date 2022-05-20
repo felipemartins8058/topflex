@@ -8,7 +8,7 @@ const Sale = () => {
     return(
         <S.SaleWrapper>
             <S.SaleBackground>
-                <StaticImage src='../../images/start.png' layout='fullWidth' quality={100}/>
+                <StaticImage src='../../images/conforto2.jpg' layout='fullWidth' quality={100}/>
             </S.SaleBackground>
             <S.Wrapper>
                 <div></div>

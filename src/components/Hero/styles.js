@@ -4,7 +4,21 @@ export const HeroWrapper = styled.section`
     position: relative;
     height: 100vh;
     width: 100%;
+
+    @media (max-width: 768px) {
+        overflow: hidden;
+    }
 `;
+
+export const HeroGradient = styled.div`
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    width: 1000px;
+    height: 1000px;
+    background-image: radial-gradient(at 50% 50%, #fff 0px, #fff0 68%);
+    z-index: 1;
+`
 
 export const HeroGrid = styled.div`
     max-width: 1400px;
@@ -29,6 +43,7 @@ export const HeroBackground = styled.div`
     height: 100%;
     overflow: hidden;
     z-index: -1;
+    opacity: 0.8;
 
     .gatsby-image-wrapper{
         height: 100%;
@@ -39,6 +54,7 @@ export const HeroContent = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;    
-    background: radial-gradient(50% 50% at 50% 50%, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+    align-items: flex-start;
+    z-index: 2;
+    /* background: radial-gradient(50% 50% at 50% 50%, #ffffff 0%, rgba(255, 255, 255, 0) 100%); */
 `;

@@ -44,21 +44,32 @@ export const FlexBox = styled.div`
         flex-direction: column;
         align-items: flex-start;
     }
+
+    @media (max-width: 768px) {
+        #content{
+            flex: 0 0 100%;
+        }
+    }
 `
 
 export const StoreImg = styled.div`
     position: absolute;
     top: 0;
-    left: 0;
+    left: ${(props) => `${props.left}px` || `0px`};
     width: 100%;
     height: 100%;
     right: 0;
     bottom: 0;
-    opacity: 0.8;
+    opacity: ${(props) => props.opacity ? `${props.opacity}` : `0.8`};
     z-index: -1;
 
     .gatsby-image-wrapper{
         height: 100%;
+    }
+
+    @media (max-width: 768px) {
+        opacity: 0.4;
+        left: 0;
     }
 `
 

@@ -11,7 +11,7 @@ const Store = () => {
             <S.StoreGrid>
                 <div>
                     <S.StoreItemBig>
-                        <S.StoreImg>
+                        <S.StoreImg left={-140}>
                             <StaticImage src="../../images/tpx.jpg" quality={10} layout="fullWidth" />
                         </S.StoreImg>
                         <S.FlexBox>
@@ -25,7 +25,7 @@ const Store = () => {
                 </div>
                 <div className="gap">
                 <S.StoreItemSmall>
-                        <S.StoreImg>
+                        <S.StoreImg left={-190}>
                             <StaticImage src="../../images/song.jpg" layout="fullWidth" />
                         </S.StoreImg>
                         <S.FlexBox>
@@ -37,7 +37,7 @@ const Store = () => {
                         </S.FlexBox>
                     </S.StoreItemSmall>
                     <S.StoreItemSmall>
-                        <S.StoreImg>
+                        <S.StoreImg opacity={0.5}>
                             <StaticImage src="../../images/start.png" layout="fullWidth" />
                         </S.StoreImg>
                         <S.FlexBox>

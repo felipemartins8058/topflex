@@ -7,6 +7,7 @@ import CTA from "../CTA";
 const Hero = () => {
     return (
         <S.HeroWrapper>
+            <S.HeroGradient></S.HeroGradient>
             <S.HeroBackground>
                 <StaticImage layout="fullWidth" src="../../images/hero.png" alt="Background" />
             </S.HeroBackground>
