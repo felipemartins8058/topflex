@@ -57,4 +57,8 @@ export const HeroContent = styled.div`
     align-items: flex-start;
     z-index: 2;
     /* background: radial-gradient(50% 50% at 50% 50%, #ffffff 0%, rgba(255, 255, 255, 0) 100%); */
+
+    @media (max-width: 768px) {
+        justify-content: flex-end;
+    }
 `;

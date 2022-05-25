@@ -5,6 +5,7 @@ import Store from "./Store";
 import Sale from "./Sale";
 import Testimonials from "./Testimonials";
 import Footer from "./Footer";
+import Navbar from "./Navbar";
 
 const Layout =() => {
     return (
@@ -15,6 +16,7 @@ const Layout =() => {
             <Sale />
             <Testimonials />
             <Footer />
+            <Navbar />
         </>
     )
 }
