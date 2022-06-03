@@ -23,6 +23,12 @@ module.exports = {
         "gatsby-plugin-sharp",
         "gatsby-transformer-sharp",
         {
+            resolve: "gatsby-plugin-facebook-pixel",
+            options: {
+                pixelId: "372808458192910",
+            },
+        },
+        {
             resolve: "gatsby-source-filesystem",
             options: {
                 name: "images",
