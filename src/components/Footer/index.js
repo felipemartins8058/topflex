@@ -18,7 +18,7 @@ const Footer = () => {
                         <form name="contact" method="POST" data-netlify="true">
                             <input type="text" id="name" name="name" placeholder="Nome completo" />
                             <input type="email" id="email" name="email" placeholder="E-mail" />
-                            <input type="number" name="number" name="whatsapp" id="number" placeholder="Whatsapp" />
+                            <input type="number" name="whatsapp" id="number" placeholder="Whatsapp" />
                             <textarea id="message" name="message" placeholder="Mensagem" rows={8} cols="10"></textarea>
                             <button type="submit">Enviar</button>
                         </form>
