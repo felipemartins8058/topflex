@@ -7,16 +7,19 @@ const Footer = () => {
     return (
         <S.Footer>
             <S.TitleWrapper>
-                <T.Titulo1>Entre em contato conosco</T.Titulo1>
+                <S.Flex>
+                    <T.Titulo3>Prefere que a gente entre em contato?</T.Titulo3>
+                    <T.Titulo1>Deixe sua mensagem</T.Titulo1>
+                </S.Flex>
             </S.TitleWrapper>
             <S.FooterBackground>
                 <S.FooterGrid>
                     <S.FormWrapper>
-                        <form>
-                            <input type="text" id="name" placeholder="Nome completo" />
-                            <input type="email" id="email" placeholder="E-mail" />
-                            <input type="number" name="number" id="number" placeholder="Whatsapp" />
-                            <textarea id="message" placeholder="Mensagem" rows={8} cols="10"></textarea>
+                        <form name="contact" method="POST" data-netlify="true">
+                            <input type="text" id="name" name="name" placeholder="Nome completo" />
+                            <input type="email" id="email" name="email" placeholder="E-mail" />
+                            <input type="number" name="number" name="whatsapp" id="number" placeholder="Whatsapp" />
+                            <textarea id="message" name="message" placeholder="Mensagem" rows={8} cols="10"></textarea>
                             <button type="submit">Enviar</button>
                         </form>
                         <S.Info>

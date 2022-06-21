@@ -11,10 +11,10 @@ const Layout =() => {
     return (
         <>
             <Hero />
-            <About />
             <Store />
             <Sale />
             <Testimonials />
+            <About />
             <Footer />
             <Navbar />
         </>

@@ -41,7 +41,7 @@ export const Titulo5 = styled.h5`
     font-weight: 600;
     font-size: 20px;
     line-height: 30px;
-    color: #ffffff;
+    color: ${(props) => `#${props.color}` || `#FFFFFF`};
 `;
 
 export const Texto = styled.p`

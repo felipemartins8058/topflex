@@ -10,3 +10,31 @@ body{
 h1, h2, h3, h4, h5, h6{
     margin: 0;
 }
+.ReactModal__Overlay{
+    z-index: 99;
+}
+.ReactModal__Content{
+    width: 360px;
+    z-index: 999;
+}
+
+.ReactModal__Overlay {
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open{
+    opacity: 1;
+}
+
+.ReactModal__Overlay--before-close{
+    opacity: 0;
+}
+
+@media (max-width: 768px){
+    .ReactModal__Content{
+        width: 100%;
+        height: 90vh;
+        inset: 56% auto auto 50% !important;
+    }
+}

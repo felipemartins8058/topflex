@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Footer = styled.footer`
     position: relative;
-    margin-top: 5rem;
+    margin-top: 15rem;
 `;
 
 export const FooterBackground = styled.div`
@@ -15,6 +15,10 @@ export const TitleWrapper = styled.div`
     margin-bottom: 2rem;
     padding: 0 1rem;
 `;
+
+export const Flex = styled.div`
+    width: 65%;
+`
 
 export const FooterGrid = styled.div`
     max-width: 1400px;

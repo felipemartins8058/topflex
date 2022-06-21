@@ -10,7 +10,7 @@ const Navbar = () => {
                 <S.Logo>
                     <StaticImage src="../../images/logo.png" />
                 </S.Logo>
-                <S.Info>
+                <S.Info href="#">
                     <div className="icon">
                         <StaticImage src="../../images/whatsapp_icon_preto.png" />
                     </div>

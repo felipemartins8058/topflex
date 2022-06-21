@@ -4,53 +4,100 @@ import * as T from "../stylesText";
 import CTA from "../CTA";
 import { StaticImage } from "gatsby-plugin-image";
 
+import Modal from "react-modal";
+
 const Store = () => {
+    const [modalTpx, setModalTpx] = React.useState(false);
+    const [modalSong, setModalSong] = React.useState(false);
+    const [modalMoveis, setModalMoveis] = React.useState(false);
+
+    function handleOpenTpx() {
+        setModalTpx(true);
+    }
+
+    function handleOpenSong(){
+        setModalSong(true)
+    }
+
+    function handleOpenMoveis(){
+        setModalMoveis(true)
+    }
+
+    function handleCloseModal() {
+        setModalTpx(false);
+        setModalSong(false);
+        setModalMoveis(false);
+    }
+
+    const customStyles = {
+        content: {
+            top: '50%',
+            left: '50%',
+            right: 'auto',
+            bottom: 'auto',
+            marginRight: '-50%',
+            transform: 'translate(-50%, -50%)',
+            borderRadius: '20px'
+        }
+    }
+
     return (
         <S.StoreWrapper>
             <T.Titulo1>Mais conforto e sofisticação no seu Office</T.Titulo1>
-            <S.StoreGrid>
-                <div>
-                    <S.StoreItemBig>
-                        <S.StoreImg left={-140}>
-                            <StaticImage src="../../images/tpx.jpg" quality={10} layout="fullWidth" />
-                        </S.StoreImg>
-                        <S.FlexBox>
-                            <div id="content">
-                                <T.Titulo2>TPX Presidente</T.Titulo2>
-                                <T.Texto>Moderno e amplo encosto em tela de linhas marcantes e angulares, braços ajustáveis, espuma de boa resiliência e um mecanismo exclusivo</T.Texto>
-                                <CTA />
-                            </div>
-                        </S.FlexBox>
-                    </S.StoreItemBig>
-                </div>
-                <div className="gap">
-                <S.StoreItemSmall>
-                        <S.StoreImg left={-190}>
-                            <StaticImage src="../../images/song.jpg" layout="fullWidth" />
-                        </S.StoreImg>
-                        <S.FlexBox>
-                            <div id="content">
-                                <T.Titulo2>Cadeira Song </T.Titulo2>
-                                <T.Texto>Os apoios de cabeça, de braços e lombar são ajustáveis e, somados ao mecanismo deslizante, oferecem múltiplas combinações para se adaptarem aos mais diversos biotipos.</T.Texto>
-                                <CTA />
-                            </div>
-                        </S.FlexBox>
-                    </S.StoreItemSmall>
-                    <S.StoreItemSmall>
-                        <S.StoreImg opacity={0.5}>
-                            <StaticImage src="../../images/start.png" layout="fullWidth" />
-                        </S.StoreImg>
-                        <S.FlexBox>
-                            <div id="content">
-                                <T.Titulo2>Móveis de escritório no geral</T.Titulo2>
-                                <T.Texto>Conheça outras opções incríveis</T.Texto>
-                                <CTA />
-                            </div>
-                        </S.FlexBox>
-                    </S.StoreItemSmall>
-                    
-                </div>
-            </S.StoreGrid>
+
+            <S.HorizontalScroll>
+                <S.CardProduct>
+                    <S.ProductImg>
+                        <StaticImage src="../../images/tpx.jpg" layout="fullWidth" />
+                    </S.ProductImg>
+                    <T.Titulo3>TPX Presidente</T.Titulo3>
+                    <StaticImage src="../../images/rating.png" width={100} />
+                    <S.Button onClick={handleOpenTpx}>Ver mais</S.Button>
+                </S.CardProduct>
+
+                <S.CardProduct>
+                    <S.ProductImg>
+                        <StaticImage src="../../images/song.jpg" layout="fullWidth" />
+                    </S.ProductImg>
+                    <T.Titulo3>Cadeira Song </T.Titulo3>
+                    <StaticImage src="../../images/rating.png" width={100} />
+                    <S.Button onClick={handleOpenSong}>Ver mais</S.Button>
+                </S.CardProduct>
+
+                <S.CardProduct>
+                    <S.ProductImg>
+                        <StaticImage src="../../images/start2.png" layout="fullWidth" />
+                    </S.ProductImg>
+                    <T.Titulo5 color="#1a1b1c">Móveis de escritório no geral</T.Titulo5>
+                    <StaticImage src="../../images/rating.png" width={100} />
+                    <S.Button onClick={handleOpenMoveis}>Ver mais</S.Button>
+                </S.CardProduct>
+            </S.HorizontalScroll>
+
+            <Modal isOpen={modalTpx} onRequestClose={handleCloseModal} style={customStyles}>
+                <S.CloseModal onClick={handleCloseModal}><T.Texto color="CCCCCC">x</T.Texto></S.CloseModal>
+                <T.Titulo2>TPX Presidente</T.Titulo2>
+                <StaticImage src="../../images/tpx.jpg" quality={10} layout="fullWidth" />
+                <T.Texto>Moderno e amplo encosto em tela de linhas marcantes e angulares, braços ajustáveis, espuma de boa resiliência e um mecanismo exclusivo</T.Texto>
+                <CTA />
+            </Modal>
+
+            <Modal isOpen={modalSong} onRequestClose={handleCloseModal} style={customStyles}>
+                <S.CloseModal onClick={handleCloseModal}><T.Texto color="CCCCCC">x</T.Texto></S.CloseModal>
+                <T.Titulo2>Cadeira Song </T.Titulo2>
+                <StaticImage src="../../images/song.jpg" layout="fullWidth" />
+                <T.Texto>Os apoios de cabeça, de braços e lombar são ajustáveis e, somados ao mecanismo deslizante, oferecem múltiplas combinações para se adaptarem aos mais diversos biotipos.</T.Texto>
+                <CTA />
+            </Modal>
+
+            <Modal isOpen={modalMoveis} onRequestClose={handleCloseModal} style={customStyles}>
+                <S.CloseModal onClick={handleCloseModal}><T.Texto color="CCCCCC">x</T.Texto></S.CloseModal>
+                <T.Titulo5>Móveis de escritório no geral</T.Titulo5>
+                <StaticImage src="../../images/start2.png" layout="fullWidth" />
+                <T.Texto>Conheça outras opções incríveis</T.Texto>
+                <CTA />
+            </Modal>
+
         </S.StoreWrapper>
     );
 };

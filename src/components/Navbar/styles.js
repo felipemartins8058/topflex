@@ -29,12 +29,13 @@ export const Logo = styled.div`
     max-width: 150px;
 `;
 
-export const Info = styled.div`
+export const Info = styled.a`
     width: 100%;
     display: flex;
     gap: 1rem;
     align-items: center;
     justify-content: flex-end;
+    text-decoration: none;
 
     @media (max-width: 768px) {
         display: none;
