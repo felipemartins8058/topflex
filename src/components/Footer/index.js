@@ -1,5 +1,5 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image"
+import { StaticImage } from "gatsby-plugin-image";
 import * as S from "./styles";
 import * as T from "../stylesText";
 
@@ -22,6 +22,9 @@ const Footer = () => {
                             <textarea id="message" name="message" placeholder="Mensagem" rows={8} cols="10"></textarea>
                             <button type="submit">Enviar</button>
                         </form>
+                        <T.Titulo3 color="fff" weight={600}>
+                            Nossos Contatos
+                        </T.Titulo3>
                         <S.Info>
                             <div className="icon">
                                 <StaticImage src="../../images/location_icon.png" />
@@ -30,20 +33,32 @@ const Footer = () => {
                                 <T.Texto color="fff">Avenida Dom Manuel, 738</T.Texto>
                             </div>
                         </S.Info>
+                        <a href="https://api.whatsapp.com/send?phone=5585989489182&text=Quero%20saber%20mais%20sobre%20os%20produtos%20Topflex">
+                            <S.Info>
+                                <div className="icon">
+                                    <StaticImage src="../../images/whatsapp_icon.png" />
+                                </div>
+                                <div className="text">
+                                    <T.Texto color="fff">85 98948-9182</T.Texto>
+                                </div>
+                            </S.Info>
+                        </a>
+                        <a href="https://www.instagram.com/topflexoffice/">
+                            <S.Info>
+                                <div className="icon">
+                                    <StaticImage src="../../images/instagram.png" />
+                                </div>
+                                <div className="text">
+                                    <T.Texto color="fff">@topflexoffice</T.Texto>
+                                </div>
+                            </S.Info>
+                        </a>
                         <S.Info>
                             <div className="icon">
                                 <StaticImage src="../../images/email_icon.png" />
                             </div>
                             <div className="text">
                                 <T.Texto color="fff">topflex@contato.com</T.Texto>
-                            </div>
-                        </S.Info>
-                        <S.Info>
-                            <div className="icon">
-                                <StaticImage src="../../images/whatsapp_icon.png" />
-                            </div>
-                            <div className="text">
-                                <T.Texto color="fff">85 98948-9182</T.Texto>
                             </div>
                         </S.Info>
                     </S.FormWrapper>

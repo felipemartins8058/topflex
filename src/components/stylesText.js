@@ -28,7 +28,7 @@ export const Titulo2 = styled.h2`
 export const Titulo3 = styled.h3`
     font-family: "Poppins";
     font-style: normal;
-    font-weight: 400;
+    font-weight: ${props => props.weight ? `${props.weight}` : "400"};
     font-size: 31px;
     line-height: 46px;
     text-align: ${(props) => `${props.alignText}` || `left`};

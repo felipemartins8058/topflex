@@ -9,6 +9,7 @@ import Modal from "react-modal";
 const Store = () => {
     const [modalTpx, setModalTpx] = React.useState(false);
     const [modalSong, setModalSong] = React.useState(false);
+    const [modalGoha, setModalGoha] = React.useState(false);
     const [modalMoveis, setModalMoveis] = React.useState(false);
 
     function handleOpenTpx() {
@@ -23,10 +24,15 @@ const Store = () => {
         setModalMoveis(true)
     }
 
+    function handleOPenGoha() {
+        setModalGoha(true)
+    }
+
     function handleCloseModal() {
         setModalTpx(false);
         setModalSong(false);
         setModalMoveis(false);
+        setModalGoha(false);
     }
 
     const customStyles = {
@@ -63,6 +69,15 @@ const Store = () => {
                     <StaticImage src="../../images/rating.png" width={100} />
                     <S.Button onClick={handleOpenSong}>Ver mais</S.Button>
                 </S.CardProduct>
+                
+                <S.CardProduct>
+                    <S.ProductImg>
+                        <StaticImage src="../../images/goha.jpg" layout="fullWidth" />
+                    </S.ProductImg>
+                    <T.Titulo3>Cadeira Goha </T.Titulo3>
+                    <StaticImage src="../../images/rating.png" width={100} />
+                    <S.Button onClick={handleOPenGoha}>Ver mais</S.Button>
+                </S.CardProduct>
 
                 <S.CardProduct>
                     <S.ProductImg>
@@ -87,6 +102,14 @@ const Store = () => {
                 <T.Titulo2>Cadeira Song </T.Titulo2>
                 <StaticImage src="../../images/song.jpg" layout="fullWidth" />
                 <T.Texto>Os apoios de cabeça, de braços e lombar são ajustáveis e, somados ao mecanismo deslizante, oferecem múltiplas combinações para se adaptarem aos mais diversos biotipos.</T.Texto>
+                <CTA />
+            </Modal>
+
+            <Modal isOpen={modalGoha} onRequestClose={handleCloseModal} style={customStyles}>
+                <S.CloseModal onClick={handleCloseModal}><T.Texto color="CCCCCC">x</T.Texto></S.CloseModal>
+                <T.Titulo2>Cadeira Goha </T.Titulo2>
+                <StaticImage src="../../images/song.jpg" layout="fullWidth" />
+                <T.Texto>Braços, altura do assento e inclinação do encosto ajustáveis. A tela do seu encosto é dublada, aumentando sua durabilidade, além de ser fixada a um estrutural produzido em polímero injetado de alta resistência que protege a tela de atritos.</T.Texto>
                 <CTA />
             </Modal>
 

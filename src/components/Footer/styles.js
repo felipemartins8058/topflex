@@ -3,6 +3,10 @@ import styled from "styled-components";
 export const Footer = styled.footer`
     position: relative;
     margin-top: 15rem;
+
+    @media (max-width: 768px){
+        margin-top: 2rem;
+    }
 `;
 
 export const FooterBackground = styled.div`
@@ -76,6 +80,10 @@ export const FormWrapper = styled.div`
         line-height: 30px;
         color: #ffffff;
         border: none;
+        cursor: pointer;
+    }
+    a{
+        text-decoration: none;
     }
 `;
 
@@ -85,6 +93,10 @@ export const Maps = styled.div`
 
     iframe {
         border: 0;
+    }
+
+    @media (max-width: 768px){
+        display: none;
     }
 `;
 

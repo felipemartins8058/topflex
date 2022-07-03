@@ -10,13 +10,13 @@ import Navbar from "./Navbar";
 const Layout =() => {
     return (
         <>
+            <Navbar />
             <Hero />
             <Store />
             <Sale />
             <Testimonials />
             <About />
             <Footer />
-            <Navbar />
         </>
     )
 }

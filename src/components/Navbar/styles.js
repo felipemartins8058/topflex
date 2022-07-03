@@ -8,6 +8,10 @@ export const Navbar = styled.nav`
     left: 0;
     width: 100%;
     z-index: 99;
+
+    @media (max-width: 768px) {
+        position: relative;
+    }
 `;
 
 export const NavbarContainer = styled.div`

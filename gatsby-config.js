@@ -11,10 +11,17 @@ module.exports = {
                 trackingId: "CHANGE-IT-LATER",
             },
         },
+        // {
+        //     resolve: "gatsby-plugin-google-tagmanager",
+        //     options: {
+        //         id: "GTM-TLB2GZZ",
+        //         includeInDevelopment: true,
+        //     },
+        // },
         {
             resolve: "gatsby-plugin-google-tagmanager",
             options: {
-                id: "GTM-TLB2GZZ",
+                id: "GTM-T629HH4",
                 includeInDevelopment: false,
             },
         },
