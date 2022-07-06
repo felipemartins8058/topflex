@@ -8,7 +8,7 @@ const MAIN_KEYWORDS = "my website, tech, software, content"
 
 const DEFAULT_IMAGE_CARD = "https://topflexoffice.com.br/image-card"
 const DEFAULT_TITLE = "This is my website"
-const DEFAULT_DESCRIPTION = "This is the description of my website"
+const DEFAULT_DESCRIPTION = "TPX OFFICE 🪑 Office & Design 🤩 Ergonomia e Conforto na hora de trabalhar"
 
 const FAVICON_SOURCE = "https://topflexoffice.com.br/favicon.ico"
 
