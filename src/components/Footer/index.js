@@ -8,7 +8,7 @@ const Footer = () => {
         <S.Footer>
             <S.TitleWrapper>
                 <S.Flex>
-                    <T.Titulo3>Prefere que a gente entre em contato?</T.Titulo3>
+                    <T.Titulo3 alt="Teste">Prefere que a gente entre em contato?</T.Titulo3>
                     <T.Titulo1>Deixe sua mensagem</T.Titulo1>
                 </S.Flex>
             </S.TitleWrapper>
