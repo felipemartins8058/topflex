@@ -8,7 +8,7 @@ const IndexPage = () => {
     <main>
       <>
         <SEO
-          title="Topflex - Office & Design"
+          title="TPX OFFICE - Office & Design"
         />
         <Layout />
       </>

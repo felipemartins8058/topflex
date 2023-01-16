@@ -1,6 +1,6 @@
 module.exports = {
     siteMetadata: {
-        title: `Topflex`,
+        title: `TPX OFFICE`,
         siteUrl: `https://topflexoffice.com.br`,
     },
     plugins: [
@@ -38,7 +38,7 @@ module.exports = {
         {
             resolve: "gatsby-plugin-manifest",
             options: {
-                icon: "src/images/logo.png",
+                icon: "src/images/logo2.png",
                 name: `TopFlex`,
                 short_name: `TopFlex`,
             },

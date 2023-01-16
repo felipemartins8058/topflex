@@ -9,7 +9,7 @@ const About = () => {
             <S.AboutFlex>
                 <S.AboutContent>
                     <T.Titulo1>Sobre Nós</T.Titulo1>
-                    <T.Texto>Atuamos no mercado desde 1990, como especialistas em Cadeiras Office, Cadeiras Design e Móveis para Escritório. Estamos entre as líderes de vendas em Fortaleza e nos destacamos pela qualidade técnica, junção do conforto, elegância e ergonomia em nossos produtos, além do atendimento de excelência, tanto online quanto presencial. Produtividade e bem estar, você adquire na Topflex.</T.Texto>
+                    <T.Texto>Atuamos no mercado desde 1990, como especialistas em Cadeiras Office, Cadeiras Design e Móveis para Escritório. Estamos entre as líderes de vendas em Fortaleza e nos destacamos pela qualidade técnica, junção do conforto, elegância e ergonomia em nossos produtos, além do atendimento de excelência, tanto online quanto presencial. Produtividade e bem estar, você adquire na TPX OFFICE.</T.Texto>
                 </S.AboutContent>
                 <S.AboutImage>
                     <StaticImage layout="fullWidth" src="../../images/about.png" />

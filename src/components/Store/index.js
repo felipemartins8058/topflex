@@ -56,7 +56,7 @@ const Store = () => {
                     <S.ProductImg>
                         <StaticImage src="../../images/tpx.jpg" layout="fullWidth" />
                     </S.ProductImg>
-                    <T.Titulo3>TPX Presidente</T.Titulo3>
+                    <T.Titulo3>TPX Diretor</T.Titulo3>
                     <StaticImage src="../../images/rating.png" width={100} />
                     <S.Button onClick={handleOpenTpx}>Ver mais</S.Button>
                 </S.CardProduct>
@@ -91,7 +91,7 @@ const Store = () => {
 
             <Modal isOpen={modalTpx} onRequestClose={handleCloseModal} style={customStyles}>
                 <S.CloseModal onClick={handleCloseModal}><T.Texto color="CCCCCC">x</T.Texto></S.CloseModal>
-                <T.Titulo2>TPX Presidente</T.Titulo2>
+                <T.Titulo2>TPX Diretor</T.Titulo2>
                 <StaticImage src="../../images/tpx.jpg" quality={10} layout="fullWidth" />
                 <T.Texto>Moderno e amplo encosto em tela de linhas marcantes e angulares, braços ajustáveis, espuma de boa resiliência e um mecanismo exclusivo</T.Texto>
                 <CTA />

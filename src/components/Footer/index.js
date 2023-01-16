@@ -43,13 +43,21 @@ const Footer = () => {
                                 </div>
                             </S.Info>
                         </a>
-                        <a href="https://www.instagram.com/topflexoffice/">
+                        <S.Info>
+                            <div className="icon">
+                                <StaticImage src="../../images/telefone.png" />
+                            </div>
+                            <div className="text">
+                                <T.Texto color="fff">85 3771-1072</T.Texto>
+                            </div>
+                        </S.Info>
+                        <a href="https://www.instagram.com/tpxoffice/">
                             <S.Info>
                                 <div className="icon">
                                     <StaticImage src="../../images/instagram.png" />
                                 </div>
                                 <div className="text">
-                                    <T.Texto color="fff">@topflexoffice</T.Texto>
+                                    <T.Texto color="fff">@tpxoffice</T.Texto>
                                 </div>
                             </S.Info>
                         </a>

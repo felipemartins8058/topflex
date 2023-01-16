@@ -8,7 +8,7 @@ const Navbar = () => {
         <S.Navbar>
             <S.NavbarContainer>
                 <S.Logo>
-                    <StaticImage src="../../images/logo.png" />
+                    <StaticImage src="../../images/logo2.png" />
                 </S.Logo>
                 <S.Info href="https://api.whatsapp.com/send?phone=5585989489182&text=Quero%20saber%20mais%20sobre%20os%20produtos%20Topflex">
                     <div className="icon">
